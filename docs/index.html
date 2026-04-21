@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
+  <link rel="stylesheet" href="//unpkg.com/docsify-accordion/src/style.css">
+  <!--<link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css">-->
+  <link rel="stylesheet" href="//unpkg.com/docsify-accordion/src/style.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'SmartRuleEngine',
+      repo: 'OracularIS/smartruleengine',
+      homepage: 'readme.md',
+      coverpage: true,
+      search: 'auto', // default,
+      loadSidebar: true,
+      subMaxLevel: 4,
+      auto2top: true,
+      search: {
+        maxAge: 86400000, // Expiration time, the default one day
+        paths: 'auto', // or 'auto'
+        placeholder: 'Type to search',
+        depth: 6,
+        hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+        namespace: 'smart-devops',
+      },
+    /*  toc: {
+        scope: '.markdown-section',
+        headings: 'h1, h2, h3, h4, h5, h6',
+        title: 'Table of Contents',
+      },*/
+      
+    }
+  </script>
+  <!-- Vue.js Production CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <script src="//unpkg.com/docsify-accordion/src/index.js"></script>
+  <!--<script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>-->
+  <script src="//unpkg.com/docsify-accordion/src/index.js"></script>
+  <script>
+    // Initialize Vue instance after Docsify is ready
+    window.$docsify.plugins = [].concat(window.$docsify.plugins, function(hook, vm) {
+      hook.doneEach(function() {
+        // Ensure Vue only initializes once
+        if (!window.vueApp) {
+          window.vueApp = new Vue({
+            el: '#apptest',
+            data: window.$docsify.vueGlobalOptions.data,
+            created: window.$docsify.vueGlobalOptions.created,
+            methods: window.$docsify.vueGlobalOptions.methods
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</body>
+</html>
