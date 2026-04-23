@@ -4,7 +4,7 @@
 - [Core Concepts](./core/)
     - [Smart Rule](./core/smart.md)
     - [Conditional Rule](/core/conditional.md)
-    - [Smart Rule vs Conditonal Rule](/docs/core/svc.md)
+    - [Smart Rule vs Conditonal Rule](/core/svc.md)
 - [Policies](./pth/main.md)
     - [Context Policy](./pth/policy.md)
     - [Hook Policy](./pth/hooks.md)
