@@ -26,30 +26,30 @@ A few trigger points are listed below.
 
 | Trigger Point | Type | Fires When |
 |---|---|---|
-| [`OSSI-ORD-BEFORE-CRUD`](./triggers/ossi-ord-before-crud.md) | Before CRUD | Before an order record is created or updated |
-| [`OSSI-ORD_LINE-BEFORE-CRUD`](./triggers/ossi-ord-line-before-crud.md) | Before CRUD | Before an order line record is created or updated |
-| [`OSSI-ORDER-CREATED`](./triggers/ossi-order-created.md) | At Created | After an order is successfully created |
+| `OSSI-ORD-BEFORE-CRUD` | Before CRUD | Before an order record is created or updated |
+| `OSSI-ORD_LINE-BEFORE-CRUD` | Before CRUD | Before an order line record is created or updated |
+| `OSSI-ORDER-CREATED` | At Created | After an order is successfully created |
 
 ### Shipment & Carrier
 
 | Trigger Point | Type | Fires When |
 |---|---|---|
-| [`OSSI-SHIPMENT-CREATED`](./triggers/ossi-shipment-created.md) | At Created | After a shipment is created |
-| [`OSSI-CARMOV-CREATED`](./triggers/ossi-carmov-created.md) | At Created | After a carrier movement record is created |
-| [`OSSI-TRAILER-DISPATCHED`](./triggers/ossi-trailer-dispatched.md) | Event-based | When a trailer is dispatched |
-| [`OSSI-CONSOLIDATE-SHIPMENT-LINES`](./triggers/ossi-consolidate-shipment-lines.md) | Event-based | During shipment line consolidation |
+| `OSSI-SHIPMENT-CREATED` | At Created | After a shipment is created |
+| `OSSI-CARMOV-CREATED` | At Created | After a carrier movement record is created |
+| `OSSI-TRAILER-DISPATCHED` | Event-based | When a trailer is dispatched |
+| `OSSI-CONSOLIDATE-SHIPMENT-LINES` | Event-based | During shipment line consolidation |
 
 ### Inventory & Work
 
 | Trigger Point | Type | Fires When |
 |---|---|---|
-| [`OSSI-PICK-RELEASE`](./triggers/ossi-pick-release.md) | Event-based | During pick release and work execution |
-| [`OSSI-INVENTORY-STATUS-CHANGE`](./triggers/ossi-inventory-status-change.md) | Event-based | When an inventory record status changes |
+| `OSSI-PICK-RELEASE` | Event-based | During pick release and work execution |
+| `OSSI-INVENTORY-STATUS-CHANGE` | Event-based | When an inventory record status changes |
 
 ### Integration
 
 | Trigger Point | Type | Fires When |
 |---|---|---|
-| [`OSSI-INTEGRATION`](./triggers/ossi-integration.md) | Event-based | During integration value mapping |
+| `OSSI-INTEGRATION` | Event-based | During integration value mapping |
 
 ---
