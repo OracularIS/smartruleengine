@@ -1,4 +1,15 @@
 <!-- docs/_sidebar.md -->
 
 - [Home](./readme.md)
-- [Key Components](keycomp.md)
+- [Core Concepts](./core/)
+    - [Smart Rule](./core/smart.md)
+    - [Conditional Rule](/core/conditional.md)
+    - [Smart Rule vs Conditonal Rule](/docs/core/svc.md)
+- [Policies](./pth/main.md)
+    - [Context Policy](./pth/policy.md)
+    - [Hook Policy](./pth/hooks.md)
+    - [Triggers](./pth/trigger.md)
+    - [Delay Execution Policy](./pth/delay.md)
+- [Getting Started](gettingstarted.md)
+- [Execution Flow](execution.md)
+- [Reference](./lescmd.md)
