@@ -6,7 +6,7 @@ Engine can evaluate and execute rules.
 
 When a business event occurs, an order is saved, a shipment is created, a 
 trailer is dispatched, the system hits a trigger point. If the corresponding 
-[hook](./hooks.md) is enabled, the Rule Engine evaluates any rules 
+[hook](/pth/hooks.md) is enabled, the Rule Engine evaluates any rules 
 configured for that moment.
 
 ## Trigger Types
