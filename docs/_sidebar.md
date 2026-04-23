@@ -1,7 +1,7 @@
 <!-- docs/_sidebar.md -->
 
 - [Home](./readme.md)
-- [Core Concepts](./core/)
+- [Core Concepts](./core/cmain.md)
     - [Smart Rule](./core/smart.md)
     - [Conditional Rule](/core/conditional.md)
     - [Smart Rule vs Conditonal Rule](/core/svc.md)
